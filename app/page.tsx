@@ -19,7 +19,7 @@ export default function Home() {
       console.log(userName, "userName", roomId, "roomId");
       socket.emit("join_room", roomId);
       setShowSpinner(true);
-// You can remove this setTimeout and add your own logic
+
       setTimeout(() => {
         setShowChat(true);
         setShowSpinner(false);
